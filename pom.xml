@@ -58,7 +58,7 @@
         <!--<connection>scm:git:git@github.com/gjorgihristovski/sfg-pet-clinic.git</connection>-->
         <!--<developerConnection>scm:git:git@github.com/gjorgihristovski/sfg-pet-clinic.git</developerConnection>-->
     <!--</scm>-->
-    <scm>
-        <developerConnection>scm:svn:https://github.com/gjorgihristovski/sfg-pet-clinic</developerConnection>
-    </scm>
+    <!--<scm>-->
+        <!--<developerConnection>scm:svn:https://github.com/gjorgihristovski/sfg-pet-clinic</developerConnection>-->
+    <!--</scm>-->
 </project>

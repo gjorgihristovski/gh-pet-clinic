@@ -9,7 +9,6 @@
 
     <artifactId>pet-clinic-web</artifactId>
 
-
     <dependencies>
         <dependency>
             <groupId>guru.springframework</groupId>
@@ -33,8 +32,6 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
-
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

@@ -10,7 +10,7 @@ public interface CrudService<T, ID> {
 
     Set<T> findAll();
 
-    T findById(ID id);
+    T findByID(ID id);
 
     T save(T t);
 

@@ -4,7 +4,7 @@
 
     <groupId>guru.springframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
@@ -41,13 +41,6 @@
                     <goals>install</goals>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-scm-plugin</artifactId>
-                        <version>1.8.1</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>

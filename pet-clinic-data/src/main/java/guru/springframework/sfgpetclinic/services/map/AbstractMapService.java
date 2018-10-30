@@ -1,5 +1,7 @@
 package guru.springframework.sfgpetclinic.services.map;
 
+import guru.springframework.sfgpetclinic.services.CrudService;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -9,28 +11,28 @@ import java.util.Set;
  * Created by gjorgi.hristovski on 30-Oct-18 in 10:43
  * Created in guru.springframework.sfgpetclinic.services.map for sfg-pet-clinic
  */
-public abstract class AbstractMapService<T, ID> {
+public abstract class AbstractMapService<T, ID> implements CrudService<T, ID> {
 
     protected Map<ID, T> map = new HashMap<>();
 
-    Set<T> findAll(){
+    public Set<T> findAll(){
         return new HashSet<>(map.values());
     }
 
-    T findByID(ID id){
+    public T findByID(ID id){
         return map.get(id);
     }
 
-    T save(ID id, T t){
+    public T save(ID id, T t){
         map.put(id, t);
         return t;
     }
 
-    void deleteByID(ID id){
+    public void deleteByID(ID id){
         map.remove(id);
     }
 
-    void delete(T t){
+    public void delete(T t){
         map.entrySet().removeIf(entry -> entry.getValue().equals(t));
     }
 }

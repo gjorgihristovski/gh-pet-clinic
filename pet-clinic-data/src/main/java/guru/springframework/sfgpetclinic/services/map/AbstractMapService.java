@@ -1,7 +1,6 @@
 package guru.springframework.sfgpetclinic.services.map;
 
 import guru.springframework.sfgpetclinic.model.BaseEntity;
-import guru.springframework.sfgpetclinic.services.CrudService;
 
 import java.util.*;
 
@@ -9,7 +8,7 @@ import java.util.*;
  * Created by gjorgi.hristovski on 30-Oct-18 in 10:43
  * Created in guru.springframework.sfgpetclinic.services.map for sfg-pet-clinic
  */
-public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> implements CrudService<T, ID> {
+public abstract class AbstractMapService<T extends BaseEntity, ID extends Long>{
 
     protected Map<Long, T> map = new HashMap<>();
 

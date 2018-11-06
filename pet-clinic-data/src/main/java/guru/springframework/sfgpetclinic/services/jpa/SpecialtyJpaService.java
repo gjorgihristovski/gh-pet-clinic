@@ -2,7 +2,7 @@ package guru.springframework.sfgpetclinic.services.jpa;
 
 import guru.springframework.sfgpetclinic.model.Speciality;
 import guru.springframework.sfgpetclinic.repositories.SpecialityRepository;
-import guru.springframework.sfgpetclinic.services.SpecialityService;
+import guru.springframework.sfgpetclinic.services.SpecialtyService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -15,11 +15,11 @@ import java.util.Set;
  */
 @Service
 @Profile("jpa")
-public class SpecialityJpaService implements SpecialityService {
+public class SpecialtyJpaService implements SpecialtyService {
 
     private final SpecialityRepository specialityRepository;
 
-    public SpecialityJpaService(SpecialityRepository specialityRepository) {
+    public SpecialtyJpaService(SpecialityRepository specialityRepository) {
         this.specialityRepository = specialityRepository;
     }
 

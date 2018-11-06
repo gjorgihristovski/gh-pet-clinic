@@ -8,4 +8,6 @@ import org.springframework.data.repository.CrudRepository;
  * Created in guru.springframework.sfgpetclinic.repositories for sfg-pet-clinic
  */
 public interface OwnerRepository extends CrudRepository<Owner, Long> {
+
+    Owner findByLastName(String lastName);
 }

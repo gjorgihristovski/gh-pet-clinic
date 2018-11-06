@@ -1,5 +1,11 @@
 package guru.springframework.sfgpetclinic.model;
 
+
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,11 +13,15 @@ import java.util.Set;
  * Created by gjorgi.hristovski on 29-Oct-18 in 13:17
  * Created in guru.springframework.sfgpetclinic.model for sfg-pet-clinic
  */
+@Entity
+@Table(name = "owners")
 public class Owner extends Person {
 
     private String address;
     private String city;
     private String telephone;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<Pet> pets = new HashSet<>();
 
     public String getAddress() {
